@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="faq.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7E2k6lJq6iH_aW_pDCiSKcsC1c8-YAjLeA0BImPkqgwXq22wsIYicWIJkaaU9vSpyfVVLD10YAridbSBfBlF4JoWTvqIyvs2Rii9wBo15EbULoOiGDHn3WWuGRkFNLoJBbq0GPYrQpIhtq66D3cDtwKL89Ivq-d7DIUN9QitJmWk4gyjRV8S9IwyO9zqwYii8PpHYUCu8T5HNbdcx8vM5-yb3IQmgJrjO3wd3Rrf9sq_kflRgB5bcET4k_Z3WtStZ27Z9N3Y1JAtERvQiSpJ0yjgRdYGiSB7VoZ2wbw5GBKV4Km-7L1394vN_XhkpG2GwF4rhA0E42wBbmdMlLzhRQ" charset="UTF-8"></script></head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="assets/Logo-Color.png" alt="logo">
+            </div>
+            <ul class="navigation">
+                <li onmouseenter="moveUp(this)"><a href="beranda.html">Beranda</a></li>
+                <li onmouseenter="moveUp(this)"><a href="panduan.html">Panduan</a></li>
+                <li onmouseenter="moveUp(this)" class="active"><a href="faq.html">FAQ</a></li>
+                <li onmouseenter="moveUp(this)"><a href="tentang.html">Tentang</a></li> 
+            </ul>
+            <a class="masuk" href="#"><button>Masuk</button></a>
+            <a class="daftar" href="#"><button>Daftar</button></a>
+            <div class="menuToogle" onclick="toogleMenu();"></div>
+        </header>
+
+        <section class="banner">
+            <img class="mySlides" src="assets/banner batik.png">
+            <div class="text">
+                <h1>FAQ</h1>
+                <hr>
+                <p>Tanya jawab seputar penggunaan dan fitur aplikasi JSS</p>
+            </div>
+        </section>
+
+        <section class="layout">
+            <div>
+                <div>
+                    <form action="#" method="post" class="hidden-sm">
+                        <input type="text" name="search" id="search" placeholder="Temukan Topik/Pertanyaan...">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </div>
+                <div>
+                    <div class = "horizontal"></div>
+                    <div class="tab-top">
+                        <div class="tab-header">
+                            <div class="active-tab list-tab">Aplikasi</div>
+                            <div class="list-tab">Akun</div>
+                            <div class="list-tab">Layanan</div>
+                            <div class="list-tab">Cara Pakai</div>
+                        </div>
+                        <div class="tab-indicator"></div>
+                    </div>
+                    
+                    <div class="tab-body">
+                        <div class="active-tab list-tab">
+                            <div class="faq">
+                                <button class="f">Cara menggunakan JSS dengan web browser?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Buka web browser (misal : chrome, mozilla, safari);<br>
+                                        <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/faq-browser.png" width="100%" style="max-width: 350px"></li>
+                                        <li>Ketik jss.jogjakota.go.id di jendela alamat.<br>
+                                        <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/faq-url.png" width="100%" style="max-width: 350px"></li>
+                                    </ol>
+                                </div>
+                                <button class="f">Cara menggunakan JSS dengan aplikasi android?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Install Buka Playstore di HP Android;<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/faq-playstore.png" width="100%" style="max-width: 350px"></li>
+                                        <li>Ketik "Jogja Smart Service" pada jendela pencarian;<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/faq-apk.png" width="100%" style="max-width: 350px"></li>
+                                        <li>Klik "Install";<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/2_INSTAL.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Tunggu proses instalasi selesai;<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/faq-installing.png" width="100%" style="max-width: 350px"></li>
+                                        <li>Buka ;<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/faq-installed1.png" width="100%" style="max-width: 350px"></li>
+                                        <li>JSS berhasil didownload.<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/faq-login_page.png" width="100%" style="max-width: 350px"></li>
+                                    </ol>
+                                </div>
+                                <button class="f">Bagaimana jika saya tidak bisa membuka menu tertentu di HP saya tapi saya bisa membukanya di perangkat lain?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Logout akun JSS di Handphone Anda, lalu Login ulang.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-tab">
+                            <div class="faq">
+                                <button class="f">Bagaimana cara daftar?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Klik "Belum jadi member? Daftar di sini"<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/daftar_2.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Masukkan data lengkap sesuai isian di form pendaftaran.<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/Screenshot_20190701-151812_Jogja_Smart_Service.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Perhatikan : alamat email yang dituliskan harus valid dan nomor telpon harus aktif/bisa menerima SMS.<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/daftar_21.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Klik pada kolom yang tersedia setelah membaca Syarat dan Ketentuan<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/daftar_3.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Klik "Daftar"<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/daftar_4.jpg" width="100%" style="max-width: 350px"></li>
+                                    </ol>
+                                </div>
+                                <button class="f">Bagaimana cara mendaftar JSS jika belum mempunyai KTP?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Pendaftaran bisa menggunakan NIK yang tertera pada Kartu Identitas Anak (KIA) atau Kartu Keluarga (KK).</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Bagaimana cara aktivasi?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Cek surat masuk dari JSS di email atau;<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/2__aktivasi_email_2.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Cek sms masuk dari JSS di HP<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/2__aktivasi_cut.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Klik link aktivasi yang dikirimkan melalui e-mail dan sms (pilih salah satu)</li>
+                                        <li>Masukan kode yang tertera pada E-mail dan SMS ke halaman aktivasi</li>
+                                        <li>Klik kirim</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <button class="f">Bagaimana bila lupa username atau password JSS?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Klik menu "lupa password";<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/3__lupa_pasword.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Masukkan email yang didaftarkan.<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/3__lupa_password_2_1.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Cek surat masuk dari JSS di e-mail. username ada di redaksi sapaan, yaitu Hai { username } lalu klik link "berikut ini" untuk merujuk ke halaman penggantian password<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/3__lupa_password_3.jpeg" width="100%" style="max-width: 350px"></li>
+                                        <li>Masukan password baru pada kolom Password Baru dan Konfirmasi Password. Perhatikan huruf besar dan kecil. Pastikan keduanya sama.<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/4__lupa_password_4.jpg" width="100%" style="max-width: 350px"></li>
+                                        <li>Klik "Ganti Password"</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Bagaimana bila lupa alamat email yang didaftarkan?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Jika Anda lupa alamat e-mail yang didaftarkan, silakan menghubungi Seksi Pengembangan Smart City Dinas Kominfosandi di 0274-515865 ext. 481</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Bagaimana bila lupa password email?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Masuk ke jendela login email Anda.</li>
+                                        <li>Gunakan fasilitas "lupa password " atau " forgot password".</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <button class="f">Bagaimana jika baik email maupun no hp salah?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Silakan hubungi Seksi Pengembangan Smart City Dinas Kominfosandi di 0274-515865 (ext 481) atau datang langsung dengan memberikan Fotocopy KTP.</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Bagaimana jika saya salah memasukan Nomor KTP?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Silakan hubungi Seksi Pengembangan Smart City Dinas Kominfosandi di 0274-515865 (ext 481) atau datang langsung dengan memberikan Fotocopy KTP.</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Bagaimana bila tedapat pesan "username dan password salah"?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Cek penulisan username atau password, pastikan sudah benar;</li>
+                                        <li>Cek tombol capslock pada keyboard, matikan tombolnya.<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/5__kombinasi_salahh1.jpeg" width="100%" style="max-width: 350px"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <button class="f">Bagaimana bila tedapat pesan "Kode verifikasi captcha salah "?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Klik tombol refresh captcha;<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/capthca212.png" width="100%" style="max-width: 350px"></li>
+                                        <li>Ulangi entri captcha, perhatikan besar kecilnya huruf.<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/capthca2111.png" width="100%" style="max-width: 350px"></li>
+                                    </ol>
+                                </div>
+                                <button class="f">Bagaimana bila tidak bisa akses menu e-office?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Hubungi admin OPD anda, minta untuk dimasukkan NIP/NITB/no registrasi tenaga teknis anda ke akun JSS anda.</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Bagaimana bila tidak muncul menu kepegawaian?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Hubungi admin OPD anda</li>
+                                        <li>Minta untuk ditingkatkan role/peran anda di JSS dari warga kota/non kota menjadi "petugas lapangan/pegawai";</li>
+                                        <li>Minta untuk untuk ditetapkan OPD tempat anda bertugas.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="faq">
+                                <button class="f">Saya warga Kota Jogja tetapi di JSS saya terdeteksi sebagai warga luar kota, apa yang salah?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Warga Kota Yogyakarta adalah warga yang memiliki NIK Kota Yogyakarta</li>
+                                        <li>Pastikan NIK yang didaftarkan sudah benar dan berjumlah 16 digit.</li>
+                                        <li>Jika NIK yang didaftarkan salah, silakan datang/hubungi Dinas Kominfosandi dengan membawa fotocopy KTP.</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Saya sudah mendaftar, kenapa saya belum bisa login?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Silahkan aktivasi dulu akun anda melalui email yang dikirim JSS ke email yang anda daftarkan<br>
+                                            <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/harap_aktivasi.png" width="100%" style="max-width: 350px"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-tab">
+                            <div class="faq">
+                                <button class="f">Saya tidak menerima broadcast sebagai pegawai, apa yang salah?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Minta admin OPD anda mengangkat anda sbg "Petugas Lapangan/Pegawai";</li>
+                                        <li>Minta admin OPD anda mengisi "OPD" tempat anda berdinas;</li>
+                                        <li>Kosongkan "jenis laporan".</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Saya tidak bisa membuka eoffice saya di JSS android, apa yang salah?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Minta admin OPD anda memasukkan "NIP/NITB/No.petugas teknis" di kolom isian NIP.</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Saya tidak bisa membuka menu laporan SKPD saya, apa yang salah?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Minta admin Pusat (telp ke 481) untuk mengangkat anda sbg "Admin SKPD";</li>
+                                        <li>Minta admin Pusat (telp ke 481) untuk mengisi "OPD" tempat anda berdinas;</li>
+                                        <li>Masukkan semua "jenis laporan" yang masuk dalam OPD anda.</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Saya tidak bisa membuka menu laporan SKPD sesuai dengan ketugasan saya, apa yang salah?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Minta admin OPD anda mengangkat anda sbg "Petugas Lapangan/Pegawai";</li>
+                                        <li>Minta admin OPD anda mengisi "OPD" tempat anda berdinas;</li>
+                                        <li>Masukkan "jenis laporan" yang menjadi kewenangan anda.</li>
+                                    </ol>
+                                </div>
+                                <button class="f">Saya tidak bisa membuka menu broadcast SKPD saya (sebagai admin OPD), apa yang salah?</button>
+                                <div class="l"></div>
+                                <div class="q">
+                                    <ol>
+                                        <li>Minta admin Pusat (telp ke 481) untuk mengangkat anda sbg "Admin SKPD";</li>
+                                        <li>Minta admin Pusat (telp ke 481) untuk mengisi "OPD" tempat anda berdinas;</li>
+                                        <li>Masukkan semua "jenis laporan" yang masuk dalam OPD anda.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-tab">
+                            <div class="content">
+                                <div class="sidebar">
+                                    <div class="active-bar list-bar">Kedaruratan</div>
+                                    <div class="list-bar">Pengaduan</div>
+                                    <div class="list-bar">Layanan Kelurahan-Kecamatan</div>
+                                    <div class="list-bar">Antrean Puskesmas</div>
+                                </div>
+                                <div class="isi">
+                                    <div class="active-bar list-bar tanya-jawab">
+                                        <button class="tanya">Bagaimana cara lapor kedaruratan lewat JSS?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li>Buka aplikasi JSS android;</li>
+                                                <li>Buka salah satu menu kedaruratan (gawat darurat medis, penyelamatan jiwa, kebakaran);</li>
+                                                <li>Foto kondisi kejadian darurat yang terjadi;</li>
+                                                <li>Masukkan keterangan penjelasan yang diperlukan;</li>
+                                                <li>Klik "LAPORKAN"</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="list-bar tanya-jawab">
+                                        <button class="tanya">Bagaimana cara melakukan pengaduan lewat JSS?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li>Buka aplikasi JSS android;</li>
+                                                <li>Pilih jenis pengaduan ( topik dan jenis);</li>
+                                                <li>Foto konten yang anda adukan (misal : lampu penerang jalan yang mati)</li>
+                                                <li>Masukkan keterangan penjelasan yang diperlukan;</li>
+                                                <li>Klik "LAPORKAN".</li>
+                                            </ol>
+                                        </div>
+                                        <button class="tanya">Bagaimana cara bertanya/memberi saran lewat JSS?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li>Buka aplikasi JSS android;</li>
+                                                <li>Pilih saran/pertanyaan;</li>
+                                                <li>Pilih kategori pertanyaan (jika pertanyaan);</li>
+                                                <li>Masukan pertanyaan atau saran anda;</li>
+                                                <li>Klik "Kirim pertanyaan".</li>
+                                            </ol>
+                                        </div>
+                                        <button class="tanya">Bagaimana cara memeriksa status laporan yang saya laporkan di JSS?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li>Klik tombol collapse yang ada di pojok kiri atas/geser layar dari kiri ke kanan<br>
+                                                    <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/home_jss1.jpg" width="100%" style="max-width: 350px"></li>
+                                                <li>Klik pada "Laporan Saya"<br>
+                                                    <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/laporan_saya.jpg" width="100%" style="max-width: 350px"></li>
+                                                <li>Klik pada laporan yang diinginkan<br>
+                                                    <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/laporan_saya_2.jpg" width="100%" style="max-width: 350px"></li>
+                                            </ol>
+                                        </div>
+                                        <button class="tanya">Bagaimana jika saya salah memilih Jenis Laporan saat membuat pengaduan?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li>Admin OPD akan mengembalikan laporan Anda ke Admin Pusat untuk diteruskan ke OPD terkait.</li>
+                                            </ol>
+                                        </div>
+                                        <button class="tanya">Apakah saya bisa menghapus pengaduan saya?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li>Pengaduan yang sudah dikirimkan tidak dapat dihapus. Akan tetapi, Anda bisa menghubungi Kominfo untuk menyembunyikan pengaduan.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="list-bar tanya-jawab">
+                                        <button class="tanya">Apa yang harus saya siapkan untuk mengurus dokumen lewat layanan Kelurahan & Kecamatan di JSS ?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li></li>
+                                            </ol>
+                                        </div>
+                                        <button class="tanya">Bagaimana cara memeriksa status layanan yang saya ajukan lewat menu layanan Kelurahan & Kecamatan di JSS?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li>Masuk ke menu "Layanan Kel & Kec"<br>
+                                                    <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/periksa_kel_kec.jpg" width="100%" style="max-width: 350px"></li>
+                                                <li>Masukan nomor registrasi Anda ke kolom yang tersedia<br>
+                                                    <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/periksa_kel_kec_3.jpg" width="100%" style="max-width: 350px"></li>
+                                                <li>Scroll layar ke atas hingga menemui kolom "Riwayat Pendaftaran" jika Anda tidak hafal nomor registrasi Anda<br>
+                                                    <img src="https://jss.jogjakota.go.id/file_arsip/broadcast/periksa_kel_kec_4.jpg" width="100%" style="max-width: 350px"></li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="list-bar tanya-jawab">
+                                        <button class="tanya">Bagaimana alur pendaftaran Antrean Puskesmas?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li>Klik menu Antrian Puskesmas</li>
+                                                <li>Pilih Puskesmas dan Klinik yang dituju</li>
+                                                <li>Pilih tanggal yang tersedia</li>
+                                                <li>Lengkapi formulir yang disediakan</li>
+                                                <li>Lampirkan dokumen yang diminta</li>
+                                                <li>Klik daftar</li>
+                                            </ol>
+                                        </div>
+                                        <button class="tanya">Apakah bisa mendaftaran orang lain melalui antrean puskesmas?</button>
+                                        <div class="line"></div>
+                                        <div class="jawab">
+                                            <ol>
+                                                <li>Bisa. Pengguna JSS bisa mendaftarkan calon pasien yang berada di KK yang sama.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="w3-content w3-display-container">
+
+                    <h5 class="sub-judul-agenda">AGENDA KOTA YOGYAKARTA</h5>
+
+                    <div class="w3-display-container agenda">
+                        <img src="assets/agenda_ngayogjazz.png" style="width: 300px">
+                        <div class="w3-display-topleft w3-medium w3-container w3-padding-16 w3-black">
+                          Ngayogjazz
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container agenda">
+                        <img src="assets/agenda_sekaten.png" style="width: 300px">
+                        <div class="w3-display-topleft w3-medium w3-container w3-padding-16 w3-black">
+                          Sekaten
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container agenda">
+                        <img src="assets/agenda_fashionweek.png" style="width: 300px">
+                        <div class="w3-display-topleft w3-medium w3-container w3-padding-16 w3-black">
+                          Fashion Week
+                        </div>
+                    </div>
+
+                    <button class="w3-button w3-display-container w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-container w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+
+                <div>
+                    <h5 class="sub-judul-promosi">#PRODUK JOGJA</h5>
+                    <img class="iklan" src="assets/iklan_dgd.png" alt="">
+                </div>
+
+                <div>
+                    <h5 class="sub-judul-sosmed">SOSIAL MEDIA</h5>
+                    <div class="sosmed-grup">
+                        <img class="sosmed" src="assets/logo_facebook.png" alt="">
+                        <img class="sosmed" src="assets/logo_twt.png" alt="">
+                        <img class="sosmed" src="assets/logo_instagram.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <footer>
+            <div>
+                <h5>JOGJA SMART SERVICE (JSS)</h5>
+                <h6>Jalur tambahan penginformasian dan pelaporan kedaruratan di luar jalur konvensional dengan pelayanan mandiri</h6>
+            </div>
+            <div class = "vertical"></div>
+            <div>
+                <h4>AKSES JSS DIMANA SAJA</h4>
+                <img class="play-store" src="assets/play-store.png" alt="">
+            </div>
+            <img class="footer-icon" src="assets/smart-city.png" alt="">
+            <div>
+                <h2>Hubungi Kami | Privacy & Policy</h2>
+                <h3>© 2021 Jogjakota.go.id. All rights reserved.</h3>
+            </div>
+            
+            <div class="footer_img"></div>
+        </footer>
+    </div>
+    <script>
+            function moveUp(x) {
+                x.style.marginTop = "0px";
+             }
+    </script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("agenda");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+    </script>
+    <script>
+        function toogleMenu(){
+            const menuToogle = document.querySelector('.menuToogle');
+            const navigation = document.querySelector('.navigation');
+            menuToogle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    <script>
+        let tabHeader = document.getElementsByClassName("tab-header")[0];
+        let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+        let tabBody = document.getElementsByClassName("tab-body")[0];
+
+        let tabsPane = tabHeader.getElementsByTagName("div");
+
+        for(let i=0; i<tabsPane.length; i++){
+            tabsPane[i].addEventListener("click", function(){
+                tabHeader.getElementsByClassName("active-tab")
+                [0].classList.remove("active-tab");
+                tabsPane[i].classList.add("active-tab");
+
+                tabBody.getElementsByClassName("active-tab")
+                [0].classList.remove("active-tab");
+                tabBody.getElementsByClassName("list-tab")
+                [i].classList.add("active-tab");
+
+                tabIndicator.style.left =`calc(calc(100%/4) * ${i})`;
+            });
+        }
+    </script>
+    <script>
+        let sidebar = document.getElementsByClassName("sidebar")[0];
+        let isi = document.getElementsByClassName("isi")[0];
+    
+        let sidePane = sidebar.getElementsByTagName("div");
+    
+        for(let i=0; i<sidePane.length; i++){
+            sidePane[i].addEventListener("click", function(){
+                sidebar.getElementsByClassName("active-bar")[0].classList.remove("active-bar");
+                sidePane[i].classList.add("active-bar");
+    
+                isi.getElementsByClassName("active-bar")[0].classList.remove("active-bar");
+                isi.getElementsByClassName("list-bar")[i].classList.add("active-bar");
+            });
+        }
+    </script>
+    <script>
+        // const topik = document.getElementsByClassName('list-bar');
+        
+        // for (let i = 0; i < topik.length; i++) {
+        //     topik[i].addEventListener('click',   function showQuestion() {
+        //         this.classList.toggle('active-bar');
+        //         let tanya = document.getElementsByClassName('tanya');
+                
+        //         for (let i = 0; i < tanya.length; i++) {
+        //             questions[i].classList.toggle('show');
+        //         }
+        //     }) 
+        // }
+        var tanya = document.getElementsByClassName("tanya");
+        var i;
+        
+        for (i = 0; i < tanya.length; i++) {
+          tanya[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var jawab = this.nextElementSibling.nextElementSibling;
+            if (jawab.style.maxHeight){
+              jawab.style.maxHeight = null;
+            } else {
+              jawab.style.maxHeight = jawab.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+    <script>
+        var f = document.getElementsByClassName("f");
+        var i;
+        
+        for (i = 0; i < f.length; i++) {
+          f[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var q = this.nextElementSibling.nextElementSibling;
+            if (q.style.maxHeight){
+              q.style.maxHeight = null;
+            } else {
+              q.style.maxHeight = q.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+</body>
+</html>

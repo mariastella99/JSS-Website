@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSS</title>
+    <link rel="shortcut icon" href="assets/Logo-Kota-Yogyakarta.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="akun_login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=NRf4sio4nQNJDQsXPk_UA0UTVKzhb2kWBqua7JSJlqqOVVCm8hhq_qYiQdhC2PwLlp4J4AUmABekNnsVSOYQ43iEOkj5VpkxDCxpZe77zVXxkS00ZiVnwSNYUqxagKCzU5C7OnyTYVoTNwzSwvxqN756NtrnKV56oKlDAOrmDQBqSs0HGjYI2hp_n4tL3LUGaFs_2u0EOMpSxeLNHYi6uyPPZsnsUk7Lfr3St8zgsk5VmWS6Ef_kOwq-cmjfF-a8U3ZxQ0ffU7IHux_uTTcTkpWIKHWEiNBpqxqymVO_OrhzBNetCESIDW4yGU-fszdeYoNCVW3wLzWP-9WrrdDUeRfij0kITmxU2je5hEQdA4gOrz_3LV95ABSb0F4xHckDXo0kXwuS_SrBGsn3gHJsr7R8g5f8x4QgrAm3ncuqw9K_rZVALYPlDQtAE5Tn-RR1YPAlMHrlKc-kK-rZIweEaQ" charset="UTF-8"></script></head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="assets/Logo-Color.png" alt="logo">
+            </div>
+            <ul class="navigation">
+                <li onmouseenter="moveUp(this)"><a href="beranda_login.html">Beranda</a></li>
+                <li onmouseenter="moveUp(this)"><a href="qr_scanner_login.html">QR Scanner</a></li>
+                <li onmouseenter="moveUp(this)"><a href="panduan_login.html">Panduan</a></li>
+                <li onmouseenter="moveUp(this)"><a href="faq_login.html">FAQ</a></li>
+                <li onmouseenter="moveUp(this)"><a href="tentang_login.html">Tentang</a></li>
+                <li onmouseenter="moveUp(this)" class="active"><a href="akun_login.html">Akun</a></li> 
+            </ul>
+            <a class="keluar" href="beranda.html"><button>Keluar</button></a>
+            <div class="menuToogle" onclick="toogleMenu();"></div>
+        </header>
+
+        <section class="banner">
+            <img class="mySlides" src="assets/banner batik.png">
+            <div class="text">
+                <h1>AKUN</h1>
+                <hr>
+                <p>Informasi dan pengaturan akun</p>
+            </div>
+        </section>
+
+        <!-- belum tau judulnya (data diri sama data akun) mau ditaroh mana -->
+        <section class="layout">
+            <div class="kiri">
+                <div>
+                    <section-style>DATA AKUN</section-style>
+                </div>
+                <div class="data-akun">
+                    <div class="field">
+                        <div><h7>JSS Code:</h7></div>
+                        <space>
+                        <div><h7>ID JSS:</h7></div>
+                        <div><h7>Nama Akun:</h7></div>
+                        <div><h7>Peran:</h7></div>
+                        <div><h7>NIK:</h7></div>
+                    </div>
+                    <div class="info">
+                        <div class="qr"></div>
+                        <div><h8>JSS-*****</h8></div>
+                        <div><h8>Reza Fahreza</h8></div>
+                        <div><h8>Warga</h8></div>
+                        <div><h8>1234567890000</h8></div>
+                    </div>
+                </div>
+            </div>
+            <div class="kanan">
+                <div>
+                    <section-style>DATA PRIBADI</section-style>
+                </div>
+                <div class="data-pribadi">
+                    <div class="bio">
+                        <div><h7>Nama Lengkap:</h7></div>
+                        <div><h7>Email:</h7></div>
+                        <div><h7>No. Handphone:</h7></div>
+                        <div><h7>No. WhatsApp:</h7></div>
+                        <div><h7>Alamat</h7></div>
+                    </div>
+                    <div class="biodata">
+                        <div>
+                            <form action="#" method="post" class="hidden-sm">
+                                <input type="text" name="nama-lengkap" id="nama-lengkap">
+                            </form>
+                        </div>
+                        <div>
+                            <form action="#" method="post" class="hidden-sm">
+                                <input type="text" name="email" id="email">
+                            </form>
+                        </div>
+                        <div>
+                            <form action="#" method="post" class="hidden-sm">
+                                <input type="text" name="no-hp" id="no-hp">
+                            </form>
+                        </div>
+                        <div>
+                            <form action="#" method="post" class="hidden-sm">
+                                <input type="text" name="no-wa" id="no-wa">
+                            </form>
+                        </div>
+                        <div class="alamat">
+                            <form action="#" method="post" class="hidden-sm">
+                                <textarea name="alamat" id="alamat"></textarea>
+                            </form>
+                        </div>
+                        <div class="tombol">
+                            <div class="ganti-password"><button id="ganti-password">Ubah Kata Sandi?</button></a></div>
+                            <div class="simpan"><button>Simpan</button></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="form-ganti" class="form-ganti">
+            <div class="window-ganti">
+                <span class="close">&times;</span>
+                <div class="judul-ganti"><section-style>GANTI KATA SANDI</section-style></div>
+                <div class="pop-up">
+                    <div class="field-ganti">
+                        <div><h7>Kata Sandi Lama:</h7></div>
+                        <div><h7>Kata Sandi Baru:</h7></div>
+                        <div><h7>Konfirmasi Kata Sandi:</h7></div>
+                    </div>
+                    <div class="sandi-ganti">
+                        <div>
+                            <form action="#" method="post" class="hidden-sm">
+                                <input type="text" name="sandi-lama" id="sandi-lama">
+                            </form>
+                        </div>
+                        <div>
+                            <form action="#" method="post" class="hidden-sm">
+                                <input type="text" name="sandi-baru" id="sandi-baru">
+                            </form>
+                        </div>
+                        <div>
+                            <form action="#" method="post" class="hidden-sm">
+                                <input type="text" name="konfirmasi" id="konfirmasi">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tombol">
+                    <div class="simpan"><button>Simpan</button></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <h5>JOGJA SMART SERVICE (JSS)</h5>
+                <h6>Jalur tambahan penginformasian dan pelaporan kedaruratan di luar jalur konvensional dengan pelayanan mandiri</h6>
+            </div>
+            <div class = "vertical"></div>
+            <div>
+                <h4>AKSES JSS DIMANA SAJA</h4>
+                <img class="play-store" src="assets/play-store.png" alt="">
+            </div>
+            <img class="footer-icon" src="assets/smart-city.png" alt="">
+            <div>
+                <h2>Hubungi Kami | Privacy & Policy</h2>
+                <h3>© 2021 Jogjakota.go.id. All rights reserved.</h3>
+            </div>
+            
+            <div class="footer_img"></div>
+        </footer>
+    </div>
+
+    <script>
+            function moveUp(x) {
+                x.style.marginTop = "0px";
+             }
+    </script>
+    <script>
+        function toogleMenu(){
+            const menuToogle = document.querySelector('.menuToogle');
+            const navigation = document.querySelector('.navigation');
+            menuToogle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("form-ganti");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("ganti-password");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

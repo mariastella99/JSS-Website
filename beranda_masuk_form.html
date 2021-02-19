@@ -1,0 +1,2317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSS</title>
+    <link rel="shortcut icon" href="assets/Logo-Kota-Yogyakarta.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="beranda_masuk_form.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script type="text/javascript" src="js/JQuery.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="assets/Logo-Color.png" alt="logo">
+            </div>
+            <ul class="navigation">
+                <li onmouseenter="moveUp(this)" class="active"><a href="beranda.html">Beranda</a></li>
+                <li onmouseenter="moveUp(this)"><a href="panduan.html">Panduan</a></li>
+                <li onmouseenter="moveUp(this)"><a href="faq.html">FAQ</a></li>
+                <li onmouseenter="moveUp(this)"><a href="tentang.html">Tentang</a></li> 
+            </ul>
+            <a class="masuk" href="beranda_masuk_form.html"><button id="masuk">Masuk</button></a>
+            <a class="daftar" href="beranda_daftar_form.html"><button id="daftar">Daftar</button></a>
+            <div class="menuToogle" onclick="toogleMenu();"></div>
+        </header>
+
+        <section class="banner">
+            <img class="mySlides" src="assets/tugu.jpg">
+            <img class="mySlides" src="assets/bakpia.png">
+            <img class="mySlides" src="assets/keraton.jpg">
+            <div class="text">
+                <h1>JOGJA SMART SERVICE (JSS)</h1>
+                <hr>
+                <p>Satu Akun untuk Semua Aplikasi dan Layanan Masyarakat di Kota Yogyakarta</p>
+            </div>
+            <form action="#" method="post" class="hidden-sm">
+                <input type="text" name="search" id="search" placeholder="Cari Layanan ...">
+                <i class="fa fa-search"></i>
+            </form>
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </section>
+
+        <section class="tabs">
+        <div>
+            <div class ="horizontal"></div>
+            <div class="tab-top">
+                <div class="tab-header">
+                    <div class="active-tab tablinks" onclick="openTab(event, 'Potensi')">Potensi Daerah</div>
+                    <div class="tablinks" onclick="openTab(event, 'Layanan')">Layanan Masyarakat</div>
+                </div>
+                <div class="tab-indicator"></div>
+            </div>
+            
+            <div class="tab-body">
+                <div class="active-tab list-tab" id="Potensi">
+                    <div class="content">
+                        <div>
+                            <div class="deskripsi-potensi">
+                                <h1>Ada Apa di Yogyakarta?</h1>
+                                <p>Kota Yogyakarta adalah sebuah kota yang memiliki bermacam-macam predikat, mulai dari kota budaya, wisata dan kota pelajar. Banyaknya predikat yang diberikan pada kota 
+                                    Yogyakarta sesuai dengan potensi yang dimiliki. Adanya bermacam-macam potensi tersebut menyebabkan daya tarik bagi masyarakat dari luar kota untuk datang berkunjung 
+                                    ke Yogyakarta, sehingga pada saat-saat tertentu kota Yogyakarta akan ramai dikunjungi oleh pendatang dari luar untuk melihat potensi yang dimilikinya.
+                                    <br>
+                                    Sebagai kota wisata, Kota Yogyakarta kaya akan obyek-obyek wisata, baik wisata alam, buatan maupun peninggalan budaya masa lampau yang dijadikan konservasi, penelitian 
+                                    dan obyek wisata. Sebagai kota budaya, Yogyakarta memiliki situs kebudayaan yang berkaitan erat dan merupakan satu rangkaian perjalanan dengan obyek-obyek wisata. 
+                                    Jadi mempunyai kesamaan karakter kegiatan yang bertujuan rekreasi dan pendidikan. Sebagai kota pelajar, Yogyakarta dikenal dengan banyaknya sekolah-sekolah dan 
+                                    lembaga-lembaga pendidikan tinggi, baik swasta maupun negeri menjadikan citra Yogyakarta sebagai kota pelajar/pendidikan di Indonesia umumnya dan Jawa Tengah.
+                                </p>
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+                            
+                            <div class="slideslider-potensi">
+                                <ul id="autoWidth" class="cs-hidden">
+                                    <li class="item-a slide-pariwisata">
+                                        <div class="box">
+                                            <div class="slide-img">
+                                                <img src="assets/potensi_pariwisata.png" alt="">
+                                                <div class="overlay">
+                                                    <a>Pariwisata</a>
+                                                </div>
+                                            </div>
+                                            <div class="detail-box">
+                                                <div class="type">
+                                                    <a href="#pariwisata">Lihat Selengkapnya</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-b slide-kebudayaan">
+                                        <div class="box">
+                                            <div class="slide-img">
+                                                <img src="assets/potensi_kebudayaan.png" alt="">
+                                                <div class="overlay">
+                                                    <a>Kebudayaan</a>
+                                                </div>
+                                            </div>
+                                            <div class="detail-box">
+                                                <div class="type">
+                                                    <a href="#kebudayaan">Lihat Selengkapnya</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-c slide-umkm">
+                                        <div class="box">
+                                            <div class="slide-img">
+                                                <img src="assets/potensi_umkm.png" alt="">
+                                                <div class="overlay">
+                                                    <a>UMKM</a>
+                                                </div>
+                                            </div>
+                                            <div class="detail-box">
+                                                <div class="type">
+                                                    <a href="#umkm">Lihat Selengkapnya</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-d slide-pendidikan">
+                                        <div class="box">
+                                            <div class="slide-img">
+                                                <img src="assets/potensi_pendidikan.png" alt="">
+                                                <div class="overlay">
+                                                    <a>Pendidikan</a>
+                                                </div>
+                                            </div>
+                                            <div class="detail-box">
+                                                <div class="type">
+                                                    <a href="#pendidikan">Lihat Selengkapnya</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-e slide-kuliner">
+                                        <div class="box">
+                                            <div class="slide-img">
+                                                <img src="assets/potensi_kuliner.png" alt="">
+                                                <div class="overlay">
+                                                    <a>Kuliner</a>
+                                                </div>
+                                            </div>
+                                            <div class="detail-box">
+                                                <div class="type">
+                                                    <a href="#kuliner">Lihat Selengkapnya</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+
+                            <div class="collapse">
+                                <div class="img-slider active-slider" id="pariwisata">
+                                    <div class="slide active-imgslider">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/laun alun@2x.png" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>Pariwisata</h2>
+                                            <h3>Alun-Alun Kidul Yogyakarta</h3>
+                                            <h4>Alun-alun selatan kota Yogyakarta merupakan 
+                                                salah satu destinasi wisata yang terkenal 
+                                                karena adanya fenomena mitos beringin 
+                                                kembar.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/tugu-jogja-1.jpg" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>Pariwisata</h2>
+                                            <h3>Tugu Yogyakarta</h3>
+                                            <h4>Tugu Yogyakarta adalah sebuah tugu atau monumen yang sering dipakai sebagai simbol atau lambang dari Kota Yogyakarta.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-navigation">
+                                        <div class="btnround active-btn"></div>
+                                        <div class="btnround"></div>
+                                    </div>
+                                </div>
+
+                                <div class="img-slider active-slider" id="kebudayaan">
+                                    <div class="slide active-imgslider">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/Kraton_Yogyakarta_Pagelaran.jpg" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>Kebudayaan</h2>
+                                            <h3>Keraton Yogyakarta</h3>
+                                            <h4>Keraton Ngayogyakarta Hadiningrat atau Keraton Yogyakarta merupakan istana resmi Kesultanan Ngayogyakarta Hadiningrat.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/batik.jpg" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>Kebudayaan</h2>
+                                            <h3>Batik</h3>
+                                            <h4>Batik motif dari Jawa ini adalah batik motif dasar yang paling tua. Batik parang ini memiliki makna petuah untuk tidak pernah menyerah, ibarat ombak laut yang tak pernah berhenti bergerak.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-navigation">
+                                        <div class="btnround active-btn"></div>
+                                        <div class="btnround"></div>
+                                    </div>
+                                </div>
+
+                                <div class="img-slider active-slider" id="umkm">
+                                    <div class="slide active-imgslider">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/perak.jpg" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>UMKM</h2>
+                                            <h3>Kerajinan Perak Kotagede</h3>
+                                            <h4>Kotagede merupakan Kecamatan yang ada di Kota Yogyakarta yang terkenal akan hasil kerajinan peraknya.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/rotan.jpg" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>UMKM</h2>
+                                            <h3>Kerajinan Pasar Beringharjo</h3>
+                                            <h4>Pasar Beringharjo menjadi destinasi untuk berburu oleh-oleh khas Yogyakarta, seperti baju batik, tas unik hingga kebaya.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-navigation">
+                                        <div class="btnround active-btn"></div>
+                                        <div class="btnround"></div>
+                                    </div>
+                                </div>
+
+                                <div class="img-slider active-slider" id="pendidikan">
+                                    <div class="slide active-imgslider">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/smk.jpg" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>Pendidikan</h2>
+                                            <h3>Sekolah Tertua</h3>
+                                            <h4>SMK Negeri 2 Yogyakarta ternyata sudah berusia 100 tahun. Sekolah yang semula bernama Prinses Juliana School (PJS) ini juga merupakan SMK tertua di Indonesia.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/taman-siswa.jpg" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>Pendidikan</h2>
+                                            <h3>Taman Siswa</h3>
+                                            <h4>Taman Siswa adalah nama sekolah yang didirikan oleh Ki Hadjar Dewantara pada tanggal 3 Juli tahun 1922 di Yogyakarta (Taman berarti tempat bermain atau tempat belajar, dan Siswa berarti murid).</h4>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-navigation">
+                                        <div class="btnround active-btn"></div>
+                                        <div class="btnround"></div>
+                                    </div>
+                                </div>
+
+                                <div class="img-slider active-slider" id="kuliner">
+                                    <div class="slide active-imgslider">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/pecel.jpg" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>Kuliner</h2>
+                                            <h3>Pecel "Senggol" Beringharjo</h3>
+                                            <h4>Nasi Pecel Pasar Beringharjo merupakan salah satu jenis makanan yang dijajakan pedagang atau bakul di depan gerbang masuk utama Pasar Beringharjo Yogyakarta.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="slide">
+                                        <div class="image">
+                                            <div class="box2 posisi">
+                                                <div class="slide-img">
+                                                    <img src="assets/gudeg2.jpg" alt="">
+                                                </div>
+                                                <div class="detail-box">
+                                                    <div class="type-new">
+                                                        <a href="#">Lihat Selengkapnya</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2>Kuliner</h2>
+                                            <h3>Gudeg</h3>
+                                            <h4>Gudeg merupakan makanan khas Yogyakarta yang terbuat dari nangka muda yang dimasak dengan santan.</h4>
+                                        </div>
+                                    </div>
+                                    <div class="rounded-navigation">
+                                        <div class="btnround active-btn"></div>
+                                        <div class="btnround"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-tab" id="Layanan">
+                    <div class="content2">
+                        <div>
+                            <div class="sidebar">
+                                <div class="active-bar menu">Kedaruratan</div>
+                                <div class="menu">Informasi dan Pengaduan</div>
+                                <div class="menu">Layanan Pegawai</div>
+                                <div class="menu">Data dan Informasi</div>
+                                <div class="menu">Layanan Umum</div>
+                                <div class="menu">Jogja Event</div>
+                                <div class="menu">eGovernment</div>
+                                <div class="menu">BUMD/BLUD</div>
+                                <div class="menu">Mitra Pemkot</div>
+                                <div class="menu">Layanan Kementerian Agama</div>
+                                <div class="menu">Layanan Pengadilan Negeri</div>
+                                <div class="menu">Layanan KPU</div>
+                            </div>
+                    
+                            <div class="isi">
+                                <div class="menu active-bar" id="kedaruratan">
+                                    <h1 class="judul-menu">KEDARURATAN</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/kegawatdaruratan/emergency/medis">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1565596940.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Gawat Darurat</a>
+                                                        <br>
+                                                        <a>Layanan Gawat Darurat dan Kegawatdaruratan Medis (HOTLINE: 119 atau 0274 420118)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/kegawatdaruratan/emergency/damkar">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1565597027.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kebakaran</a>
+                                                        <br>
+                                                        <a>Layanan Pemadam Kebakaran (HOTLINE: 0274 587101)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/upik/frontend/kegawatdaruratan/kdrt/pengaduan">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1564632138.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kekerasan (SIKAP)</a>
+                                                        <br>
+                                                        <a>Layanan Pengaduan Kekerasan terhadap Anak dan Perempuan berbasis Gender (HOTLINE: 0274-514419)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/kegawatdaruratan/emergency/sos">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1551076021.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Penyelamatan Jiwa</a>
+                                                        <br>
+                                                        <a>Layanan bantuan untuk penyelamatan jiwa (HOTLINE: 0274 587101)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="informasi_pengaduan">
+                                    <h1 class="judul-menu">INFORMASI DAN PENGADUAN</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://kliping.jogjakota.go.id/frontend/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1566221808.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kliping</a>
+                                                        <br>
+                                                        <a>Kliping berita tentang Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/upik/frontend/pengaduan/posting">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/upik_256.jpg" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pengaduan (UPIK)</a>
+                                                        <br>
+                                                        <a>UPIK merupakan fasilitas bagi masyarakat untuk menyampaikan Pengaduan / Keluhan, Pertanyaan, dan Saran.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://ppid.jogjakota.go.id/fo?token=BLer7d57qKt9JLZZq1KpwOzYgim+k5V9TjfWnf23EXctd/aW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg==">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1554368131.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">PPID</a>
+                                                        <br>
+                                                        <a>Pejabat Pengelola Informasi dan Dokumentasi Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://www.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1533702310.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Warta Kota</a>
+                                                        <br>
+                                                        <a>Informasi yang dikelola oleh Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/info/direktori">
+                                            <div href="#" class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1554183041.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Website OPD</a>
+                                                        <br>
+                                                        <a>Website Organisasi Perangkat Daerah Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://manjarkabel.jogjakota.go.id/auth.php?token=BLer7d57qKt9JLZZq1KpwOzYgim+k5V9TjfWnf23EXctd/aW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg==">
+                                            <div href="#" class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1539909030.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">WIFI SEGOROAMARTO</a>
+                                                        <br>
+                                                        <a>Akses jaringan intranet nirkabel (WiFi) Pemerintah Kota Yogyakarta menggunakan identitas (SSID) tunggal</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="layanan_pegawai">
+                                    <h1 class="judul-menu">LAYANAN PEGAWAI</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://ptt.jogjakota.go.id/naban">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1609903732.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Sim Tenaga Teknis</a>
+                                                        <br>
+                                                        <a>Manajemen Tenaga Teknis (Jaringan Intra)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/presensi/online?web=1">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1590494521.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Presensi Online</a>
+                                                        <br>
+                                                        <a>Sistem Presensi Online Pegawai Pemerintah Kota Yogyakarta.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://kinerja.jogjakota.go.id/loginjss">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1537324039.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">e-Kinerja</a>
+                                                        <br>
+                                                        <a>Sistem informasi penilaian kinerja pegawai Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://eoffice.jogjakota.go.id/publik/hreihvgaofhia">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1550737007.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">e-Office</a>
+                                                        <br>
+                                                        <a>Pelayanan Surat Menyurat Secara Elektronik</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://mail.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1593154447.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">e-Mail</a>
+                                                        <br>
+                                                        <a>Layanan email untuk Pegawai Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/kepegawaian/main">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/ic_kepegawaian.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kepegawaian</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Kepegawaian Terintegrasi</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/materi/smartcity">
+                                            <div href="#" class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1568259461.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Materi Smart City</a>
+                                                        <br>
+                                                        <a>Materi Smart City</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://pkp.jogjakota.go.id/loginjss">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1573096594.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">e-PKP 360</a>
+                                                        <br>
+                                                        <a>Modul untuk penilaian kinerja pegawai</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://presensiv2.jogjakota.go.id/loginjss?token=BLer7d57qKt9JLZZq1KpwOzYgim+k5V9TjfWnf23EXctd/aW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg==">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1533701161.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Presensi</a>
+                                                        <br>
+                                                        <a>Untuk manajemen laporan kehadiran Pegawai Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://corona.jogjakota.go.id/web_screening_pegawai/masuk_jss">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1586140576.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Skrining Corona Pegawai</a>
+                                                        <br>
+                                                        <a>Aplikasi untuk melakukan Skrinning Corona bagi Pegawai dan Keluarga</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/info/tpp/m">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1552058500.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Timeline TPP</a>
+                                                        <br>
+                                                        <a>Informasi tentang alur pengajuan TPP</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://sirapat.jogjakota.go.id/home">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1606377013.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">SiRapat</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Peminjaman dan Pemakaian Ruang Rapat</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://eksekutif.jogjakota.go.id">
+                                            <div href="#" class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1606463031.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Eksekutif</a>
+                                                        <br>
+                                                        <a>Monitoring Informasi Statistik</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="data_informasi">
+                                    <h1 class="judul-menu">DATA DAN INFORMASI</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://kampungwisata.jogjakota.go.id/auth?token=BLer7d57qKt9JLZZq1KpwOzYgim%2Bk5V9TjfWnf23EXctd%2FaW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg%3D%3D">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1610726531.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kampung Wisata</a>
+                                                        <br>
+                                                        <a>Kampung Wisata</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="http://geoportal.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603437009.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Informasi Geoportal</a>
+                                                        <br>
+                                                        <a>Informasi Geoportal</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://sitaru.jogjakota.go.id/home">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603436940.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Informasi Tata Ruang</a>
+                                                        <br>
+                                                        <a>Informasi Tata Ruang Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://sirapat.jogjakota.go.id/informasi">
+                                            <div href="#" class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/ic_agenda_rapat.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Agenda Rapat</a>
+                                                        <br>
+                                                        <a>Informasi agenda rapat seluruh SKPD di Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://cctv.jogjakota.go.id/?token=BLer7d57qKt9JLZZq1KpwOzYgim+k5V9TjfWnf23EXctd/aW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg==">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1554452933.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">CCTV</a>
+                                                        <br>
+                                                        <a>Pantau kondisi langsung wilayah Kota Yogyakarta melalui CCTV</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://datawarehouse.jogjakota.go.id/index.php/pasarkota">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/ic_retribusi_pasar_256.jpg" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">E-Retribusi Pasar</a>
+                                                        <br>
+                                                        <a>Informasi live realisasi retribusi pasar melalui E-Retribusi QR Code Pasar Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://ekraf.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603173714.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Ekonomi Kreatif</a>
+                                                        <br>
+                                                        <a>Informasi Pelaku Ekonomi Kreatif Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://gowes.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1606463451.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Gowes Kota Yogyakarta</a>
+                                                        <br>
+                                                        <a>Gowes Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/info/hbp">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1551075142.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Harga Bahan Pokok</a>
+                                                        <br>
+                                                        <a>Informasi Daftar Harga Bahan Pokok Berdasarkan Survey Harga Pasar</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/info/rsud">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/ic_kamar_rsud.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Info Kamar RSUD</a>
+                                                        <br>
+                                                        <a>Informasi Ketersediaan Ruang Rawat Rumah Sakit Umum Daerah Jogja (Wirosaban)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://perencanaan.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1561022555.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Perencanaan Pembangunan</a>
+                                                        <br>
+                                                        <a>Informasi Perencanaan Pembangunan Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://pmperizinan.jogjakota.go.id/android/publik/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1606699726.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Cek POIN (Potensi Investasi)</a>
+                                                        <br>
+                                                        <a>Informasi Potensi Investasi Kota Jogja</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://tenagakerja.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1533696435.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Lowongan Pekerjaan</a>
+                                                        <br>
+                                                        <a>Informasi lowongan pekerjaan yang masih berlaku dan resmi mengumumkannya melalui Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://lingkunganhidup.jogjakota.go.id/iklh">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1551075379.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kualitas Lingkungan Hidup</a>
+                                                        <br>
+                                                        <a>Informasi Kualitas Lingkungan Hidup</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://opendata.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1572486823.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Open Data</a>
+                                                        <br>
+                                                        <a>Dashboard informasi untuk melihat perkembangan data kependudukan, pajak, kepegawaian, tematik</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://peta.jogjakota.go.id/ponsel">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1565663304.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Peta Data Spasial</a>
+                                                        <br>
+                                                        <a>Informasi Data Spasial dalam bentuk Peta Interaktif.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://hukum.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/ic_produk_hukum.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Produk Hukum</a>
+                                                        <br>
+                                                        <a>Dokumentasi dan informasi semua produk hukum yang berlaku di Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/riset/main">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1571641818.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Riset & Kajian</a>
+                                                        <br>
+                                                        <a>Riset & Kajian yang mendukung pembangunan Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://pemberdayaan.jogjakota.go.id/pendataan">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1580439683.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Survey KSJPS</a>
+                                                        <br>
+                                                        <a>Aplikasi Survey/Pendataan KSJPS Dinas Sosial Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="layanan_umum">
+                                    <h1 class="judul-menu">LAYANAN UMUM</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://kartupencarikerja.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1607418962.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kartu Pencari Kerja</a>
+                                                        <br>
+                                                        <a>Layanan Pembuatan Kartu Pencari Kerja secara Online</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://freehotspot.jogjakota.go.id/auth.php?token=BLer7d57qKt9JLZZq1KpwOzYgim+k5V9TjfWnf23EXctd/aW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg==">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1610081470.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Wifi Free Hotspot</a>
+                                                        <br>
+                                                        <a>Akses Jaringan Gratis Pemkot Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/antrian/rsud">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1605154129.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Antrian RSUD</a>
+                                                        <br>
+                                                        <a>Informasi Antrian RSUD Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://pendaftaran.jogjakota.go.id/periksa">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1605154129.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Antrian Puskesmas</a>
+                                                        <br>
+                                                        <a>Pendaftaran Antrian Online untuk Layanan di Puskesmas</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="http://202.152.159.188/antrian/index.php/reservasi/home">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1574491167.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Antrian RS Pratama</a>
+                                                        <br>
+                                                        <a>Antrian Online untuk pendaftaran di Rumah Sakit Pratama (Pendaftaran H-7 sd H-1)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://dodolan.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/asset/img/dodolan.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Dodolan</a>
+                                                        <br>
+                                                        <a>Marketplace untuk mengiklankan produk Program Gandeng-Gendong Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://sptpd.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1533543215.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">E-SPTPD</a>
+                                                        <br>
+                                                        <a>Fitur bagi wajib pajak untuk melaporkan perhitungan pajak daerah secara mandiri</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://laporlingkungan.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1567134966.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kelola Lingkungan</a>
+                                                        <br>
+                                                        <a>Laporan Pengelolaan Limbah Usaha/Kegiatan secara online</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://pkb.jogjakota.go.id/publik/dashboard">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1591060153.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">KIR Online</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Registrasi Online Layanan Uji Berkala Kendaraan (KIR)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="http://kbs.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1551075354.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Konsultasi Belajar Siswa</a>
+                                                        <br>
+                                                        <a>Media Konsultasi Online untuk pembelajaran siswa dengan Tim khusus dari Dinas Pendidikan Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://hukum.jogjakota.go.id/index.php/konsultasi/Konsultasi_arsip">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1593577451.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Konsultasi Hukum</a>
+                                                        <br>
+                                                        <a>Masyarakat Terbuka Akses Prosedur dan Aturan Hukum (Mbak Ratu)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://kuliahlagi.jogjakota.go.id/auth">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1598341006.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kuliah Lagi</a>
+                                                        <br>
+                                                        <a>Aplikasi pencatatan kedatangan mahasiswa</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://kunjungan.jogjakota.go.id/auth">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1592623515.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Kunjungan</a>
+                                                        <br>
+                                                        <a>Pencatatan Kunjungan di tempat-tempat Penting</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://dilaneirtp.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1565335475.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Layanan E-IRTP</a>
+                                                        <br>
+                                                        <a>Layanan Permohonan Sertifikasi Industri Rumah Tangga Untuk Kategori Pangan bagi UMKM di Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/siwarga/online">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/ic_revisi_pelayanan%20publik_256.jpg" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Layanan Kelurahan & Kecamatan</a>
+                                                        <br>
+                                                        <a>Pendaftaran online untuk pelayanan di kelurahan dan kecamatan.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/info/layanan_siwarga/m">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1565684557.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Layanan Surat Warga</a>
+                                                        <br>
+                                                        <a>Portal pelayanan dan informasi untuk Warga Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://monitoringsiswa.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/Monitoring-siswa.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Monitoring Siswa</a>
+                                                        <br>
+                                                        <a>Monitoring Perkembangan dan Proses Belajar Siswa se-Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://nglarisi.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1554173344.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Ngalirisi</a>
+                                                        <br>
+                                                        <a>Pemesanan Konsumsi Rapat Ke Masyarakat Program Gandeng-Gendong Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/mobiljenazah_warga/public/daftar">
+                                            <div href="#" class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/mobil%20jenazah_256.jpg" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pemesanan Mobil Jenazah</a>
+                                                        <br>
+                                                        <a>Pengajuan permohonan layanan mobil jenazah. (Khusus orang yang sudah meninggal)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://sikeb.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1595911081.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pendaftaran Nomor Kebudayaan</a>
+                                                        <br>
+                                                        <a>Layanan Permohonan Nomor Induk Kebudayaan untuk Pelaku Budaya ( Lembaga, Pelaku, Kelompok, Sanggar, Organisasi)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://pelatihan.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1574491306.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pendaftaran Pelatihan</a>
+                                                        <br>
+                                                        <a>Pelatihan bagi Warga Kota Yogyakarta yang diselenggarakan Dinas Sosial, Tenaga Kerja dan Transmigrasi</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jpt.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1595690309.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pendaftaran Seleksi JPT</a>
+                                                        <br>
+                                                        <a>Pendaftaran Seleksi Jabatan Pimpinan Tinggi Pratama Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://perizinanonline.jogjakota.go.id/android">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/ic_perizinan_online%20256_256.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Perizinan Online</a>
+                                                        <br>
+                                                        <a>Permohonan Perizinan Pemerintah Kota Yogyakarta diluar OSS (Online Single Submission)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://eoffice.jogjakota.go.id/warga/dashboard">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1598336694.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Persuratan Dinas</a>
+                                                        <br>
+                                                        <a>Layanan Persuratan Dinas</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://yogya.siap-ppdb.com/#/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1533693933.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">PPDB</a>
+                                                        <br>
+                                                        <a>Penerimaan Peserta Didik Baru untuk SD dan SMP Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/pbb">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1552439898.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Informasi PBB</a>
+                                                        <br>
+                                                        <a>Informasi Pajak Bumi dan Bangunan</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://sip.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1574396843.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Izin Praktik Kesehatan</a>
+                                                        <br>
+                                                        <a>Layanan Permohonan Surat Izin Praktik Untuk Tenaga Medis dan Kesehatan di Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://tiket.tamanpintar.co.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1592548475.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Tiket Taman Pintar</a>
+                                                        <br>
+                                                        <a>Pemesanan Tiket Taman Pintar secara online</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="jogja_event">
+                                    <h1 class="judul-menu">JOGJA EVENT</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://pariwisata.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1552619011.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Event Wisata</a>
+                                                        <br>
+                                                        <a>Informasi Event Wisata yang ada di Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://event.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/ic_event_jogja.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pendaftaran Event</a>
+                                                        <br>
+                                                        <a>Kemudahan dalam mengikuti event Pemerintah Kota Yogyakarta maupun dari Mitra Pemkot.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="e_government">
+                                    <h1 class="judul-menu">E-GOVERNMENT</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://intra.barangpkit.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1611116955.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Inventory Barang</a>
+                                                        <br>
+                                                        <a>Pengelolaan Barang Dinas Komunikasi Informatika dan Persandian</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://tppv3.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1611665747.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">SIM TPP P3</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Manajemen TPP Berbasis Kinerja versi 3</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://atrbpn.jogjakota.go.id">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603789909.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Informasi Pertanahan</a>
+                                                        <br>
+                                                        <a>Informasi Pertanahan</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/notification">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1530921380.jpg" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Broadcast</a>
+                                                        <br>
+                                                        <a>Kemudahan dalam menyebarluaskan informasi ke semua pihak</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://bukutamu.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1569925330.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Buku Tamu</a>
+                                                        <br>
+                                                        <a>Pencatatan Penerimaan Kunjungan Tamu</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/esakip/main">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1527607788.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">E-SAKIP</a>
+                                                        <br>
+                                                        <a>Integrasi SIM-SIM pendukung Sistem Akuntabilitas Kinerja Instansi</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/la/dashboard/main">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1556604587.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Layanan Aduan</a>
+                                                        <br>
+                                                        <a>Pengelolaan Layanan Aduan</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/mobiljenazah/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1527059508.jpg" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Layanan Mobil Jenazah</a>
+                                                        <br>
+                                                        <a>Aplikasi untuk mengelola permohonan pelayanan mobil jenazah.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://simlinmas.jogjakota.go.id/v2/jss">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1554439746.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Linmas</a>
+                                                        <br>
+                                                        <a>Manajemen Data Perlindungan Masyarakat</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/manajemen">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1527147487.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Manajemen</a>
+                                                        <br>
+                                                        <a>Menu untuk pengelolaan aplikasi dan sistem informasi, serta pengaturan akun JSS.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/siwarga">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1527145521.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pelayanan Kelurahan Kecamatan</a>
+                                                        <br>
+                                                        <a>Aplikasi pelayanan warga masyarakat di kecamatan dan kelurahan</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://corona.jogjakota.go.id/auth">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1586857630.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pemantauan Hasil Skrining</a>
+                                                        <br>
+                                                        <a>Layanan untuk memantau skrining pegawai dan pendatang/pemudik di wilayah</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://ppid.jogjakota.go.id/bo?token=BLer7d57qKt9JLZZq1KpwOzYgim+k5V9TjfWnf23EXctd/aW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg==">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/ic_opd.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pengelola PPID</a>
+                                                        <br>
+                                                        <a>Pengelola Pejabat Pengelola Informasi dan Dokumentasi Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://umum.jogjakota.go.id/pintu_masuk/jss/pengelola">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1554182970.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pengelola Website OPD</a>
+                                                        <br>
+                                                        <a>Pengelolaan Website OPD Pemerintah Kota Yogyakarta bagi Admin, Kontributor, dan Pengelola Info Warga</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://aset.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1557212808.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pengelolaan Aset</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Pengelolaan Aset Pemerintah Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://kliping.jogjakota.go.id/backend">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1566202143.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pengelolaan Kliping</a>
+                                                        <br>
+                                                        <a>Layanan untuk Pengelolaan Kliping</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://pkb.jogjakota.go.id/site/jss">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1574819058.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pengujian Kendaraan Bermotor</a>
+                                                        <br>
+                                                        <a>Sistem Manajemen Pengujian Kendaraan Bermotor</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://shelter.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603173646.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Shelter</a>
+                                                        <br>
+                                                        <a>Aplikasi untuk manajemen penggunaan unit pada shelter covid19</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://persediaan.jogjakota.go.id/index.php/non_login/jss">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1564376030.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Sim Persediaan</a>
+                                                        <br>
+                                                        <a>Sistem Informasi untuk mengelola barang persediaan</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://blud.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1527663759.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">SIM BLUD dan BUMD*</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Manajemen Badan Layanan Umum Daerah dan Badan Usaha Milik Daerah</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://jpd.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1558336651.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">SIM Jaminan Pendidikan Daerah</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Pengelolaan Data Jaminan Pendidikan Kota Yogyakarta (Testing)</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://pemberdayaan.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1527727831.jpg" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">SIM Pemberdayaan Masyarakat</a>
+                                                        <br>
+                                                        <a>Sistem Informasi data pemberdayaan masyarakat Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="http://intra.tpp.jogjakota.go.id/v2?token=BLer7d57qKt9JLZZq1KpwOzYgim+k5V9TjfWnf23EXctd/aW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg==">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1527642604.jpg" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">SIM TPP V2</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Manajemen TPP Berbasis Kinerja</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://labair.jogjakota.go.id/Simlab/jss">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1571215153.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">SIM UJI KUALITAS AIR</a>
+                                                        <br>
+                                                        <a>SIM Pengelolaan Data Uji Kualitas Air UPT laboratorium DLH</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/la/pju/pju_home">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1572248658.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">SIMPENJALU</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Manajemen Penerangan Jalan Umum merupakan layana pengaduan dan menejemen Aset Penerangan Jalan Umum</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://uptbisnis.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1568361359.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">UPT Bisnis</a>
+                                                        <br>
+                                                        <a>SIM Pengelola UPT Bisnis</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="http://jkn.jogjakota.go.id/be-auth/login?token=BLer7d57qKt9JLZZq1KpwOzYgim+k5V9TjfWnf23EXctd/aW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg==">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1570605659.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Validasi data JKN</a>
+                                                        <br>
+                                                        <a>Komparasi dan Validasi data Peserta JKN dengan Database SIAK</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jss.jogjakota.go.id/upik/frontend/pengaduan/posting">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/upik_256.jpg" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Admin Pengaduan (UPIK)</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Manajemen Pengelolaan Keluhan, Pertanyaan, Informasi, maupun Usul atau Saran dari Masyarakat</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="bumd_blud">
+                                    <h1 class="judul-menu">BUMD/BLUD</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://bankjogja.com/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/logo256.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Bank Jogja</a>
+                                                        <br>
+                                                        <a>Informasi seputar Bank Jogja</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="http://pdamkotajogja.co.id/info-tagihan">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1533698059.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Info Tagihan PDAM</a>
+                                                        <br>
+                                                        <a>Informasi tagihan air PDAM TIRTAMARTA Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://tamanpintar.co.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1592461336.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Taman Pintar</a>
+                                                        <br>
+                                                        <a>Wahana Edukasi Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="mitra_pemkot">
+                                    <h1 class="judul-menu">MITRA PEMKOT</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://baznas.jogjakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1563785259.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Baznas</a>
+                                                        <br>
+                                                        <a>Badan Amil Zakat Nasional Kota Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="http://ayodonor.pmi.or.id/stokdarah.php?module=3471">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1551147880.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Stok Darah PMI</a>
+                                                        <br>
+                                                        <a>Hubungi PMI Kota Togyakarta : Jl. Tegalgendu 25 Kotagede Yogyakarta 55172 telpon 0274 372176, Fax 0274 379212.</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="layanan_kemenag">
+                                    <h1 class="judul-menu">LAYANAN KEMENTERIAN AGAMA</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="http://ppdb-man1yk.com/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1578448935.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">PPDB MAN 1</a>
+                                                        <br>
+                                                        <a>Penerimaan Peserta Didik Baru MAN 1 Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://admin.ptsp.kemenagkotajogja.org/admin/?token=BLer7d57qKt9JLZZq1KpwOzYgim%2Bk5V9TjfWnf23EXctd%2FaW68vFD1Xz6c2UPuFPSjfS0akrtj0qU5j2i05gQg%3D%3D">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-android-1578449056.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">PTSP Kemenag</a>
+                                                        <br>
+                                                        <a>Pelayanan Terpadu Satu Pintu</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="layanan_pn">
+                                    <h1 class="judul-menu">LAYANAN PENGADILAN NEGERI</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://ecourt.mahkamahagung.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1600263969.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pendaftaran Perkara</a>
+                                                        <br>
+                                                        <a>Pendaftaran Perkara</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="http://sipp.pn-yogyakota.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1543392907.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Penelusuran Perkara</a>
+                                                        <br>
+                                                        <a>Sistem Informasi Penelusuran Perkara Pengadilan Negeri Yogyakarta</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://eraterang.badilum.mahkamahagung.go.id/">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/sim-1600058882.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Surat Keterangan PN</a>
+                                                        <br>
+                                                        <a>Surat Keterangan PN</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="menu" id="layanan_kpu">
+                                    <h1 class="judul-menu">LAYANAN KPU</h1>
+                                    <div class="card">
+                                        <a target="_blank" href="https://kota-yogyakarta.kpu.go.id/rppkpu/home/audio">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603159603.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Audio</a>
+                                                        <br>
+                                                        <a>Audio</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://kota-yogyakarta.kpu.go.id/rppkpu/home/infolokal">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603159509.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Info Pemilu Jogja</a>
+                                                        <br>
+                                                        <a>Info Pemilu Jogja</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://kota-yogyakarta.kpu.go.id/rppkpu/home/cekdatapemilih">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603436201.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Data Pemilih</a>
+                                                        <br>
+                                                        <a>Data Pemilih</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://kota-yogyakarta.kpu.go.id/rppkpu/home/infonasional">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603159553.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Info Pemilu Nasional</a>
+                                                        <br>
+                                                        <a>Info Pemilu Nasional</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a target="_blank" href="https://kota-yogyakarta.kpu.go.id/rppkpu/home/edukasi">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603159366.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Pendidikan Pemilih</a>
+                                                        <br>
+                                                        <a>Pendidikan Pemilih</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://jdih.kpu.go.id/diy/yogyakarta-kota">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603159429.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Regulasi</a>
+                                                        <br>
+                                                        <a>Regulasi</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://kota-yogyakarta.kpu.go.id/rppkpu/home/simulasi">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603159313.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Simulasi</a>
+                                                        <br>
+                                                        <a>Simulasi</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a target="_blank" href="https://kota-yogyakarta.kpu.go.id/rppkpu/home/video">
+                                            <div class="card-layanan">
+                                                <div class="img-layanan">
+                                                    <img src="https://jss.jogjakota.go.id/manajemen/asset/img/jss-1603159650.png" alt="">
+                                                </div>
+                                                <div class="keterangan-layanan">
+                                                    <div class="type-keterangan">
+                                                        <a class="sub-judul">Video</a>
+                                                        <br>
+                                                        <a>Video</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div id="form-masuk" class="form-masuk">
+            <div class="window">
+                <a href="beranda.html"><span class="close">&times;</span></a>
+                <div class="logo-form">
+                    <img src="assets/logo-kota.png" alt="">
+                </div>
+                <div class="tabs-form">
+                    <div>
+                        <div class="tab-top-form">
+                            <div class="tab-header-form">
+                                <div class="active-tab-form tablinks-form" onclick="openTab(event, 'Masuk')">Masuk</div>
+                                <div class="tablinks-form" onclick="openTab(event, 'Daftar')">Daftar</div>
+                            </div>
+                            <div class="tab-indicator-form"></div>
+                        </div>
+                        <div class="tab-body-form">
+                            <div class="active-tab-form list-tab-form" id="Masuk">
+                                <div class="isi-form">
+                                    <div class="pop-up">
+                                        <div class="pop-up-con field-form">
+                                            <div><h7>Username:</h7></div>
+                                            <div><h7>Password:</h7></div>
+                                        </div>
+                                        <div class="pop-up-con content-form">
+                                            <div>
+                                                <form action="#" method="post" class="hidden-sm">
+                                                    <input type="text" placeholder="username" name="username" id="username">
+                                                </form>
+                                            </div>
+                                            <div>
+                                                <form action="#" method="post">
+                                                    <input type="password" placeholder="password" name="password" id="password">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="check">
+                                            <input type="checkbox" name="remember" value="#">
+                                            <label for="remember">Ingat saya!</label>
+                                        </div>
+                                        <div class="tombol">
+                                            <div class="masuk-form"><a href="beranda_login.html"><button>Masuk</button></a></div>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="list-tab-form" id="Daftar">
+                                <div class="isi-form">
+                                    <div class="pop-up">
+                                        <div class="field-form daftar">
+                                            <div><h7>Nama:</h7></div>
+                                            <div><h7>Email:</h7></div>
+                                            <div><h7>NIK:</h7></div>
+                                        </div>
+                                        <div class="content-form daftar">
+                                            <div>
+                                                <form action="#" method="post" class="hidden-sm">
+                                                    <input type="text" placeholder="nama" name="nama" id="nama">
+                                                </form>
+                                            </div>
+                                            <div>
+                                                <form action="#" method="post" class="hidden-sm">
+                                                    <input type="text" placeholder="email" name="email" id="email">
+                                                </form>
+                                            </div>
+                                            <div>
+                                                <form action="#" method="post" class="hidden-sm">
+                                                    <input type="number" placeholder="nik" name="nik" id="nik">
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tombol daftar">
+                                        <div class="daftar-form"><a href="#"><button>Daftar</button></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <h5>JOGJA SMART SERVICE (JSS)</h5>
+                <h6>Jalur tambahan penginformasian dan pelaporan kedaruratan di luar jalur konvensional dengan pelayanan mandiri</h6>
+            </div>
+            <div class = "vertical"></div>
+            <div>
+                <h4>AKSES JSS DIMANA SAJA</h4>
+                <img class="play-store" src="assets/play-store.png" alt="">
+            </div>
+            <img class="footer-icon" src="assets/smart-city.png" alt="">
+            <div>
+                <h2>Hubungi Kami | Privacy & Policy</h2>
+                <h3>© 2021 Jogjakota.go.id. All rights reserved.</h3>
+            </div>
+            
+            <div class="footer_img"></div>
+        </footer>
+    </div>
+
+    <script>
+        // Tab Form
+        let tabHeaderForm = document.getElementsByClassName("tab-header-form")[0];
+        let tabIndicatorForm = document.getElementsByClassName("tab-indicator-form")[0];
+        let tabBodyForm = document.getElementsByClassName("tab-body-form")[0];
+
+        let tabsPaneForm = tabHeaderForm.getElementsByClassName("tablinks-form");
+
+        for(let i=0; i<tabsPaneForm.length; i++){
+            tabsPaneForm[i].addEventListener("click", function(){
+                tabHeaderForm.getElementsByClassName("active-tab-form")
+                [0].classList.remove("active-tab-form");
+                tabsPaneForm[i].classList.add("active-tab-form");
+
+                tabBodyForm.getElementsByClassName("active-tab-form")
+                [0].classList.remove("active-tab-form");
+                tabBodyForm.getElementsByClassName("list-tab-form")
+                [i].classList.add("active-tab-form");
+
+                tabIndicatorForm.style.left =`calc(calc(100%/2) * ${i})`;
+            });
+        }
+    </script>
+
+    <script type="text/javascript" src="js/script - Copy.js"></script>
+
+</body>
+</html>

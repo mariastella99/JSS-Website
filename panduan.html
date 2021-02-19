@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="panduan.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=loimceYCVStBMhYbxyKO_-TewkUK2PFv_oOQUlMg1R_UyQdeRojNVZyblZFEMuWDEtR93rMSwrJhTtHWb6rw7MQo4zAvGvhUwd3ZsGis1NRvfrHLCqntORCcyV8eT_ERqVyez0M_EdD3X1ao0tIJPXvnfwKJdqj7v7CEl-zo1BKWAxPjNHVO1CRgpDoM-_plBMLh2UYskWKBQp2J2iypkK2Ie_zYegkCZgFA2uvqpiPUxzOMZBorA3pdNTCcPLkIBAVZDjOIe_ZDa4Nmq4aoTihpmxt8Xgu7xajsIuAzCo_FcjU2MiVH2oKJtLJQ-H2rEbrnl1umMd9f4BxGqy778w" charset="UTF-8"></script></head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="assets/Logo-Color.png" alt="logo">
+            </div>
+            <ul class="navigation">
+                <li onmouseenter="moveUp(this)"><a href="beranda.html">Beranda</a></li>
+                <li onmouseenter="moveUp(this)" class="active"><a href="panduan.html">Panduan</a></li>
+                <li onmouseenter="moveUp(this)"><a href="faq.html">FAQ</a></li>
+                <li onmouseenter="moveUp(this)"><a href="tentang.html">Tentang</a></li> 
+            </ul>
+            <a class="masuk" href="#"><button>Masuk</button></a>
+            <a class="daftar" href="#"><button>Daftar</button></a>
+            <div class="menuToogle" onclick="toogleMenu();"></div>
+        </header>
+
+        <section class="banner">
+            <img class="mySlides" src="assets/banner batik.png">
+            <div class="text">
+                <h1>PANDUAN</h1>
+                <hr>
+                <p>Informasi panduan penggunaan dan fitur aplikasi JSS</p>
+            </div>
+        </section>
+
+        <section class="layout">
+            <div>
+                <div class = "horizontal"></div>
+                <div class="tab-top">
+                    <div class="tab-header">
+                        <div class="active-tab list-tab">Panduan Ringkas</div>
+                        <div class="list-tab"> Fitur Aplikasi JSS</div>
+                        <div class="list-tab">Layanan Surat Warga</div>
+                        <div class="list-tab">Migrasi WhatsApp</div>
+                    </div>
+                    <div class="tab-indicator"></div>
+                </div>
+                
+                <div class="tab-body">
+                    <div class="active-tab list-tab">
+                        <div class="content">
+                            <div class="sidebar">
+                                <a href="#instalasi"><div>Instalasi</div></a>
+                                <a href="#registrasi"><div>Registrasi</div></a>
+                                <a href="#aktivasiUlang"><div>Aktivasi Ulang</div></a>
+                                <a href="#lupaSandi"><div>Lupa Kata Sandi</div></a>
+                            </div>
+                            <div class="isi">
+                                <div class="judul-topik">PANDUAN RINGKAS</div>
+                                <div class="sekilas-topik">Petunjuk singkat mengenai penggunaan layanan JSS, khususnya melalu aplikasi <i>mobile</i>. Uraian lebih lanjut dapat diunduh dalam tautan berikut:</i></div>
+                                <div class="file">
+                                    <img src="assets/download.png" width="100%" style="max-width: 30px" class="download">
+                                    <div class="tautan"><a href="https://jss.jogjakota.go.id/asset/doc/tutorial/Panduan%20Download%20dan%20Pendaftaran%20Akun%20JSS.pdf">&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Panduan Instalasi dan Pendaftaran.pdf</u></b></a></div>
+                                </div>
+                                
+                                <div class="subjudul-topik" id="instalasi">INSTALASI</div>
+                                <div class="uraian">
+                                    <div class="uraian-topik">1. Unduh aplikasi dengan menekan gambar atau melakukan <i>scan</i> kode QR berikut:<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://play.google.com/store/apps/details?id=id.go.jogjakota.jogjasmartservice"><img src="assets/QRcode.jpg" width="100%" style="max-width: 450px"></a>
+                                    </div>
+                                    <div class="uraian-topik">2. Setelah masuk ke aplikasi Google Playstore, pengguna bisa mengikuti langkah-langkah dalam infografis<p></p>&nbsp;&nbsp;&nbsp;&nbsp;seperti berikut: <br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<img src="assets/1.INSTALASI.jpg" width="100%" style="max-width: 450px">
+                                    </div>
+                                </div>
+
+                                <div class="subjudul-topik" id="registrasi">REGISTRASI</div>
+                                <div class="uraian">
+                                    <div class="uraian-topik">Proses registrasi melalui aplikasi <i>mobile</i> JSS dapat dilakukan dengan mengikuti panduan berikut:<br>
+                                        <img src="assets/2.REGISTRASI.jpg" width="100%" style="max-width: 450px">
+                                    </div>        
+                                </div>
+                                
+                                <div class="subjudul-topik" id="aktivasiUlang">AKTIVASI ULANG</div>
+                                <div class="uraian">
+                                    <div class="uraian-topik">Akun yang sudah didaftakan harus diaktifkan terlebih dahulu agar warga dapat menggunakan fitur penuh dari layanan JSS. Petunjuk aktivasi ulang akun dapat dilihat dalam infografis berikut:<br>
+                                        <img src="assets/3.AKTIVASI-ULANG-REV.jpg" width="100%" style="max-width: 450px">
+                                    </div>    
+                                </div>
+
+                                <div class="subjudul-topik" id="lupaSandi">LUPA KATA SANDI</div>
+                                <div class="uraian">
+                                    <div class="uraian-topik">Apabila pengguna tidak bisa masuk ke akun disebabkan lupa kata sandi, dapat diikuti petunjuk sebagai berikut:<br>
+                                        <img src="assets/4.LUPA-PASSWORD.jpg" width="100%" style="max-width: 450px">    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-tab">
+                        <div class="content">
+                            <div class="sidebar">
+                                <a href="#menuUtama"><div>Menu Utama</div></a>
+                                <a href="#menuLayanan"><div>Menu Layanan</div></a>
+                                <a href="#halamanProfil"><div>Halaman Profil</div></a>
+                            </div>
+                            <div class="isi">
+                                <div class="judul-topik">FITUR APLIKASI JSS</div>
+                                <div class="sekilas-topik">Petunjuk singkat mengenai fitur layanan JSS, khususnya melalu aplikasi <i>mobile</i>. Panduan mengenai layanan kedaruratan dan pengaduan dapat diunduh dalam tautan berikut:</div>
+                                <div class="file">
+                                    <img src="assets/download.png" width="100%" style="max-width: 30px" class="download">
+                                    <div class="tautan"><a href="https://jss.jogjakota.go.id/asset/doc/tutorial/Penggunaan%20Aplikasi%20JSS%20Kedaruratan.pdf">&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Panduan Kedaruratan.pdf</u></b></a></div>
+                                </div>
+                                <div class="file">
+                                    <img src="assets/download.png" width="100%" style="max-width: 30px" class="download">
+                                    <div class="tautan"><a href="https://jss.jogjakota.go.id/asset/doc/tutorial/Penggunaan%20Aplikasi%20JSS%20Informasi%20dan%20Pengaduan.pdf">&nbsp;&nbsp;&nbsp;&nbsp;<b><u>Panduan Informasi dan Pengaduan.pdf</u></b></a></div>
+                                </div>
+
+                                <div class="subjudul-topik" id="menuUtama">MENU UTAMA</div>
+                                <div class="uraian">
+                                    <div class="uraian-topik">Fitur utama dari aplikasi dan situs JSS terdiri dari <i>E-Government</i> dan menu Pelayanan Publik. Lebih lanjutnya dapat dilihat sebagai berikut:<br>
+                                        <img src="assets/menu-utama.jpg" width="100%" style="max-width: 450px">
+                                    </div>    
+                                </div>
+
+                                <div class="subjudul-topik" id="menuLayanan">MENU LAYANAN</div>
+                                <div class="uraian">
+                                    <div class="uraian-topik">Layanan Pemerintah Kota Yogyakarta yang dapat diakses melalui aplikasi dan situs web JSS:<br>
+                                        <img src="assets/menu -layanan.png" width="100%" style="max-width: 450px">
+                                    </div>    
+                                </div>
+                                
+                                <div class="subjudul-topik" id="halamanProfil">HALAMAN PROFIL</div>
+                                <div class="uraian">
+                                    <div class="uraian-topik">Halaman berisi informasi mengenai profil dan akun pengguna. Kontennya dapat dilihat sebagai berikut:<br>
+                                        <img src="assets/halaman-profil.jpg" width="100%" style="max-width: 450px">
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-tab">
+                        <div class="judul-topik topik-pendek">LAYANAN SURAT WARGA</div>
+                        <div class="sekilas-topik">Layanan dari Pemerintah Kota Yogyakarta untuk warga.</div>
+                        <div class="videos">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/TCssC1Bw1KY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="list-tab">
+                        <div class="judul-topik topik-pendek">MIGRASI WHATSAPP</div>
+                        <div class="sekilas-topik">Petunjuk singkat mengenai cara menautkan akun WhatsApp dengan akun JSS. Panduan lengkap dapat diunduh pada tautan berikut:</div>
+                        <div class="tautan"><a href="https://jss.jogjakota.go.id/asset/doc/tutorial/MIGRASI%20TELP%20KE%20WA%20PADA%20JSS.pdf"><b><u>Panduan Migrasi WhatsApp.pdf</u></b></a></div>
+                        <div class="videos">
+                            <video width="560" height="560" controls>
+                                <source src="https://jss.jogjakota.go.id/asset/video/JSS migrasi WA.mp4" type="video/mp4">
+                                    "Your browser does not support the video tag"
+                            </video>    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div class="w3-content w3-display-container">
+
+                    <h5 class="sub-judul-agenda">AGENDA KOTA YOGYAKARTA</h5>
+
+                    <div class="w3-display-container agenda">
+                        <img src="assets/agenda_ngayogjazz.png" style="width: 300px">
+                        <div class="w3-display-topleft w3-medium w3-container w3-padding-16 w3-black">
+                          Ngayogjazz
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container agenda">
+                        <img src="assets/agenda_sekaten.png" style="width: 300px">
+                        <div class="w3-display-topleft w3-medium w3-container w3-padding-16 w3-black">
+                          Sekaten
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container agenda">
+                        <img src="assets/agenda_fashionweek.png" style="width: 300px">
+                        <div class="w3-display-topleft w3-medium w3-container w3-padding-16 w3-black">
+                          Fashion Week
+                        </div>
+                    </div>
+
+                    <button class="w3-button w3-display-container w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-display-container w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+
+                <div>
+                    <h5 class="sub-judul-promosi">#PRODUK JOGJA</h5>
+                    <img class="iklan" src="assets/iklan_dgd.png" alt="">
+                </div>
+
+                <div>
+                    <h5 class="sub-judul-sosmed">SOSIAL MEDIA</h5>
+                    <div class="sosmed-grup">
+                        <img class="sosmed" src="assets/logo_facebook.png" alt="">
+                        <img class="sosmed" src="assets/logo_twt.png" alt="">
+                        <img class="sosmed" src="assets/logo_instagram.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <footer>
+            <div>
+                <h5>JOGJA SMART SERVICE (JSS)</h5>
+                <h6>Jalur tambahan penginformasian dan pelaporan kedaruratan di luar jalur konvensional dengan pelayanan mandiri</h6>
+            </div>
+            <div class = "vertical"></div>
+            <div>
+                <h4>AKSES JSS DIMANA SAJA</h4>
+                <img class="play-store" src="assets/play-store.png" alt="">
+            </div>
+            <img class="footer-icon" src="assets/smart-city.png" alt="">
+            <div>
+                <h2>Hubungi Kami | Privacy & Policy</h2>
+                <h3>© 2021 Jogjakota.go.id. All rights reserved.</h3>
+            </div>
+            
+            <div class="footer_img"></div>
+        </footer>
+    </div>
+
+
+    <script>
+            function moveUp(x) {
+                x.style.marginTop = "0px";
+             }
+    </script>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("agenda");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+    </script>
+    <script>
+        function toogleMenu(){
+            const menuToogle = document.querySelector('.menuToogle');
+            const navigation = document.querySelector('.navigation');
+            menuToogle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    <script>
+        let tabHeader = document.getElementsByClassName("tab-header")[0];
+        let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+        let tabBody = document.getElementsByClassName("tab-body")[0];
+
+        let tabsPane = tabHeader.getElementsByTagName("div");
+
+        for(let i=0; i<tabsPane.length; i++){
+            tabsPane[i].addEventListener("click", function(){
+                
+                //activates the header
+                tabHeader.getElementsByClassName("active-tab")
+                    [0].classList.remove("active-tab");
+                tabsPane[i].classList.add("active-tab");
+
+                //activates body
+                tabBody.getElementsByClassName("active-tab")
+                    [0].classList.remove("active-tab");
+                tabBody.getElementsByClassName("list-tab")
+                    [i].classList.add("active-tab");
+
+                //move along indicator
+                tabIndicator.style.left =`calc(calc(100%/4) * ${i})`;
+            });
+        }
+    </script>
+
+    </script>
+</body>
+</html>

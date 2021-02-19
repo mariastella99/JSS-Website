@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #FAFAFA;
+    height: 200vh;
+}
+
+.container {
+    min-height:100%;
+	position:relative;
+}
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 100px;
+    transition: 0.6s;
+    z-index: 100000;
+    background-color: white;
+}
+
+header .logo {
+    cursor: pointer;
+    position: relative;
+    transition: 0.6s;
+    margin-right: auto;
+    margin-inline-end: auto;
+}
+
+header .navigation {
+    position: relative;
+    display:flex;
+    margin-right: auto;
+    margin-inline-end: auto;
+}
+
+header .navigation li {
+    position: relative;
+    list-style: none;
+    min-height: 35px;
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+header .navigation li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 400px;
+    transition: all 0.6s ease 0s;
+}
+
+.navigation li a:hover {
+    color: #205072;
+}
+
+.navigation li:hover {
+    background-color: rgba(228, 239, 241, 0.8);
+    border-radius: 10px;
+}
+
+.navigation li.active {
+    background-color: #99b5c9;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+button {
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.masuk button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.masuk button:hover {
+    background-color: rgba(245, 245, 245, 0.8);
+    color: #205072;
+}
+
+.daftar button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    color: white;
+    background-color: #205072;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.daftar button:hover {
+    background-color: rgba(93, 208, 253, 0.8);
+    color: #205072;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 33vh;
+    background-size: cover;
+}
+.mySlides {
+    position: absolute;
+    width: 100%;
+    height: 33vh;
+    border-radius: 0 0 50px 50px;
+}
+
+h1 {
+    position: absolute;
+    display: block;
+    color:white;
+    top: 100px;
+    margin-left: 110px;
+    font-size: 3.12vw;
+    font-weight: 900;
+}
+
+hr {
+    display: block;
+    margin-top:0;
+    content: " ";
+    height:0pt;
+}
+
+p {
+    position: absolute;
+    display: block;
+    color: white;
+    top: 175px;
+    margin-left: 110px;
+    font-size: 1.25vw;
+    font-weight: 500;
+    width: 520px;
+}
+
+.content p{
+    position: relative;
+    background-color:#CDCDCD;
+    background-size: cover;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 200px;
+    grid-gap: 5px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color:#e4e4e4 ;
+    background-size: cover;
+    height: 350px;
+}
+
+.footer_img {
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    height: 30%;
+    background: url(assets/footerblu.png) repeat;
+    background-repeat: repeat-x;
+}
+
+footer > div {
+    margin-right: 50px;
+    padding-top: 60px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer h5 {
+    margin-left: 100px;
+    font-weight: 700;
+    width: 350px;
+    font-size: 20px;
+}
+
+footer h4 {
+    margin-left: 30px;
+    font-weight: 700;
+    width: 250px;
+    font-size: 20px;
+}
+
+footer h6 {
+    margin-left: 100px;
+    width: 350px;
+    font-size: 14px;
+}
+
+.vertical { 
+    border-left: 3px solid black; 
+    height: 120px; 
+    position:absolute; 
+    top: 20%;
+    left: 31%; 
+} 
+
+footer .play-store {
+    margin-left: 20px;
+}
+
+footer .footer-icon {
+    top:20%;
+    left: 52%;
+    position:absolute; 
+}
+
+footer h2 {
+    padding-top:110px;
+    text-align: right;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer h3 {
+    text-align: right;
+    font-weight: 200px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1055px) {
+    header, header.sticky{
+        padding: 20px 40px;
+    }
+
+    header .navigation {
+        display: none;
+        overflow: hidden;
+        transition: all 0.1s ease 0s;
+    }
+
+    header .navigation.active {
+        width: 120px;
+        height: calc(100%-88px);
+        position: fixed;
+        top: 80px;
+        right:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #205072;
+        background-color: white;
+    }
+    .banner {
+        position: relative;
+        width: auto;
+        display: flex;
+    }
+
+    .mySlides {
+        height: auto;
+    }
+
+    header .logo img {
+        padding-left: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+    .menuToogle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(assets/menu.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToogle.active {
+        background: url(assets/x.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    button {
+        font-size: 12px;
+        margin-left: auto;
+        padding: auto auto;
+    }
+    
+    .masuk button,  .daftar button {
+        margin-left: auto;
+        padding: auto auto;
+    }
+}

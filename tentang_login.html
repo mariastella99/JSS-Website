@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSS</title>
+    <link rel="shortcut icon" href="assets/Logo-Kota-Yogyakarta.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="tentang_login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="assets/Logo-Color.png" alt="logo">
+            </div>
+            <ul class="navigation">
+                <li onmouseenter="moveUp(this)"><a href="beranda_login.html">Beranda</a></li>
+                <li onmouseenter="moveUp(this)"><a href="qr_scanner_login.html">QR Scanner</a></li>
+                <li onmouseenter="moveUp(this)"><a href="panduan_login.html">Panduan</a></li>
+                <li onmouseenter="moveUp(this)"><a href="faq_login.html">FAQ</a></li>
+                <li onmouseenter="moveUp(this)" class="active"><a href="tentang_login.html">Tentang</a></li>
+                <li onmouseenter="moveUp(this)"><a href="akun_login.html">Akun</a></li> 
+            </ul>
+            <a class="keluar" href="beranda.html"><button>Keluar</button></a>
+            <div class="menuToogle" onclick="toogleMenu();"></div>
+        </header>
+
+        <section class="banner">
+            <img class="mySlides" src="assets/banner batik.png">
+            <div class="text">
+                <h1>TENTANG</h1>
+                <hr>
+                <p>Informasi dan penjelasan mengenai JSS</p>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <h5>JOGJA SMART SERVICE (JSS)</h5>
+                <h6>Jalur tambahan penginformasian dan pelaporan kedaruratan di luar jalur konvensional dengan pelayanan mandiri</h6>
+            </div>
+            <div class = "vertical"></div>
+            <div>
+                <h4>AKSES JSS DIMANA SAJA</h4>
+                <img class="play-store" src="assets/play-store.png" alt="">
+            </div>
+            <img class="footer-icon" src="assets/smart-city.png" alt="">
+            <div>
+                <h2>Hubungi Kami | Privacy & Policy</h2>
+                <h3>© 2021 Jogjakota.go.id. All rights reserved.</h3>
+            </div>
+            
+            <div class="footer_img"></div>
+        </footer>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+    </script>
+    <script>
+            function moveUp(x) {
+                x.style.marginTop = "0px";
+             }
+    </script>
+    <script>
+        function toogleMenu(){
+            const menuToogle = document.querySelector('.menuToogle');
+            const navigation = document.querySelector('.navigation');
+            menuToogle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
